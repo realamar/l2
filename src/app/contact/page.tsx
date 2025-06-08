@@ -7,11 +7,12 @@ declare global {
   interface Window {
     hbspt: {
       forms: {
-        create: (options: Record<string, any>) => void;
+        create: (options: Record<string, unknown>) => void;
       };
     };
   }
 }
+
 
 export default function ContactPage() {
   const formRef = useRef<HTMLDivElement>(null);
